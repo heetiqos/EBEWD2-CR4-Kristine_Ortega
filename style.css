@@ -1,0 +1,148 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: burlywood;
+}
+
+.banner {
+    background-image: url("pictures/banner.jpg");
+    height: 12rem;
+}
+
+.banner .container-fluid {
+    background-color: black;
+    opacity: 90%;
+}
+
+.banner .navbar-brand {
+    color: burlywood;
+    font-size: 25px;
+}
+
+.banner .btn {
+    background-color: azure;
+}
+
+.container {
+    width: 100%;
+    margin: auto;
+    padding: 2rem;
+    background-color: white;
+    padding-bottom: 10%;
+
+}
+
+.card {
+    padding: 5px;
+    margin: auto;
+    margin-top: 70px;
+    height: 450px;
+    border-style: none;
+    text-align: center;
+}
+
+.index img {
+    width: 70%;
+    aspect-ratio: 4/5;
+    object-fit: cover;
+    transition: all 0.3s;
+    margin-bottom: 10px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.8), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.index img:hover {
+    transform: scale(1.15);
+}
+
+.card h2 {
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.card p {
+    font-size: 16px;
+}
+
+.card .publisher {
+    font-size: 12px;
+    padding: 0;
+}
+
+.index {
+    position: relative;
+}
+
+.index .btn {
+    position: absolute;
+    bottom: 5px;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: lightgrey;
+    box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.3), 0 2px 10px 0 rgba(0, 0, 0, 0.19);
+    transition: all 0.2s linear 0s;
+}
+
+.index .btn:hover {
+    background-color: #808d43;
+    width: 1.4;
+}
+
+.card .card-detail {
+    display: flex;
+    padding: 2%;
+}
+
+.card .card-detail img {
+    max-height: 40vh;
+    object-fit: contain;
+    aspect-ratio: 2/3;
+}
+
+.card-detail .btn {
+    background-color: lightgrey;
+    border-style: none;
+}
+
+.card-detail .btn:hover {
+    background-color: #808d43;
+}
+
+.card-detail {
+    text-align: left;
+}
+
+.detail-attr {
+    width: 40%;
+    font-weight: bold;
+}
+
+footer {
+    background-color: black;
+    padding: 20px;
+    height: fit-content;
+    margin: 0;
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+}
+
+footer p {
+    color: white;
+    text-align: center;
+    font-size: 1.1rem;
+}
+
+@media (width <=900px) {
+    .container {
+        padding-bottom: 20%;
+    }
+
+    .detail {
+        padding-bottom: 110%;
+    }
+}
